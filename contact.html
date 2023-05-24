@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="script" href="script.js">
+</head>
+</head>
+<body>
+     <!--navigation-->
+     <nav>
+        <img src="Images/Ideal Design Logo1.png" alt="">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li> 
+                
+            </ul>
+        </div>
+    </nav>
+
+    <section id="contactus">
+        <!-- <div class="slider">
+            <img src="Images/banner1.jpg" id="slideimg">
+        </div>  -->
+        <h2>CONTACT US</h2>
+
+           
+    </section>
+
+    <!-- contactform -->
+    <div class="contact">
+        
+        <form onsubmit="sendemail();reset(); return false;">
+            <h3>Hire Us Now</h3>
+            <input type="text"  id="firstname" placeholder="First Name" required>
+            <input type="text"  id="lastname" placeholder="Last Name" required>
+            <input type="text"  id="country" placeholder="Country " required>
+            <input type="text"  id="company" placeholder="Comapany Name" required>
+            <input type="email"  id="email" placeholder="E-mail id" required>
+            <input type="text"  id="phonenumber" placeholder="phonenumber" required>
+            <div class="selectfeild">
+                <!-- <p>What services are you interested in?</p>  -->
+                <input type="text" placeholder="Interested Services?">
+                
+            </div>
+            <div class="list">
+                <label for="" class="serve"> 
+                    <input type="checkbox" class="serve" > <span>Display Stands</span>
+                    
+                </label>
+                <label for="" class="serve">
+                    <input type="checkbox" class="serve"><span>Retail Space/Fit-out</span> 
+
+                </label>
+                <label for="" class="serve">
+                    <input type="checkbox" class="serve"> <span>Technical Project/Custom fabrication </span>
+                </label>
+                
+               
+            </div>
+             
+           
+            <textarea  id="message" rows="4" placeholder="Tell us more"></textarea>
+            <button type="submit" onclick="sendemail()">Hire</button>
+        </form>
+
+    </div>
+    <!-- apply -->
+
+    <section id="choose1">
+        <div class="ban1">
+           <span><h1>We are Hiring!</h1></div></span>
+           <div class="contact">
+        
+            <form onsubmit="sendemail();reset(); return false;">
+                <h3>Hire Us Now</h3>
+                <div class="selectfeild">
+                    <!-- <p>What services are you interested in?</p>  -->
+                    <input type="none" placeholder="Choose your Job Role">
+                    
+                </div>
+                <div class="list">
+                    <label for="" class="serve"> 
+                        <input type="checkbox" class="serve" > <span>General</span>
+                        
+                    </label>
+                    <label for="" class="serve">
+                        <input type="checkbox" class="serve"><span>Logistics Cordinator</span> 
+    
+                    </label>
+                       
+                </div>
+                <input type="text"  id="firstname" placeholder="First Name" required>
+                <input type="text"  id="lastname" placeholder="Last Name" required>
+                <input type="text"  id="country" placeholder="Country " required>
+                <input type="text"  id="company" placeholder="Comapany Name" required>
+                <input type="email"  id="email" placeholder="E-mail id" required>
+                <input type="text"  id="phonenumber" placeholder="phonenumber" required>
+                
+                
+                 
+               
+                <textarea  id="message" rows="4" placeholder="Tell us more"></textarea>
+                <button type="submit" onclick="sendemail()">Hire</button>
+            </form>
+    
+        </div>
+          
+           
+
+           
+            </div>
+        </div>
+   <!-- footer -->
+   <section id="footer">
+    <div class="title-text">
+        
+        
+    
+        <div class="footer-right">
+            
+            <p><i class="fa fa-map-marker-alt" ></i>Address:  7, Jigani Rd, Electronic City, Bengaluru, Karnataka 560105</p>
+            
+        
+        </div>
+
+    </div>
+    <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram" ></i>
+        <i class="fa-brands fa-linkedin" ></i>
+        <p><i class="fa-regular fa-copyright"></i>  Copyright Ideal Design & Displays</p>
+
+    </div>
+
+</section>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+           Host : "smtp.gmail.com",
+           Username : "omrajput132002@gmail.com",
+           Password : "james@bond",
+           To : 'or13200208@gmail.com',
+           From : document.getElementById("email").value,
+           Subject : "New Hiring ",
+           Body : "And this is the body"
+         }).then(
+                message => alert(message)
+            );
+    };
+</script> -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("tEmOVpZpc_S36k8jw");
+   })();
+</script>
+</body>
+</html>

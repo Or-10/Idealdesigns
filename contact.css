@@ -1,0 +1,86 @@
+
+#contactus{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("Images/contact.jpg"); 
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  
+    
+}
+#contactus h2{
+    text-align: center;
+    justify-content: center;
+    color:white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    
+}
+ #contactus  p{
+    justify-content: center;
+    text-align: center;
+    width:50%;
+    color:white;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+#contactus .btn{
+    margin:30px;
+}
+#contactus a{
+    text-decoration: none;
+    font-size:0.9rem;
+    padding:13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 7px;
+
+}
+#contactus a.blue{
+    color:rgb(21,21,100);
+    background:white;
+    transition: 0.5s ease;
+   
+}
+#contactus a.blue:hover{
+    color:white;
+    background: rgb(21,21,100);
+}
+
+#contactus a.lblue{
+    color:#0096cc;
+    background: white;
+    transition: 0.5s ease;
+   
+}
+#contactus a.lblue:hover{
+    color:white;
+    background: #0096cc;
+}
+#choose1{
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(222, 225, 225);
+}
+#choose1 .ban1{
+   padding-top: 40vh;
+   padding-bottom: 50vh;
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("Images/image-asset.jpeg");
+  
+    background-size: cover;
+    
+}
+
+#choose1 .ban1 h1 {
+   color:#ffff;
+   size:1.3rem;
+   font-weight:700;
+}
+
